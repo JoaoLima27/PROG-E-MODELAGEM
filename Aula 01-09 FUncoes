@@ -1,0 +1,25 @@
+#Unidade, Dezena, Centena, Milhar
+n = int(input('Digite um número: '))
+E = n % 10
+sobra = n // 10
+D = sobra % 10
+sobra = sobra // 10
+C = sobra % 10
+sobra = sobra // 10
+B = sobra % 10
+A = sobra // 10
+print(A, B, C, D, E)
+
+
+#Media
+def CalculaMedia (nota1, nota2):
+    media = (nota1 * 2 + nota2 * 5) / 7
+    return media
+
+T1 = float(input('Digite a nota da T1: '))
+T2 = float(input('Digite a nota da T2: '))
+P1 = float(input('Digite a nota da P1: '))
+P2 = float(input('Digite a nota da P2: '))
+mediaProva = CalculaMedia(P1, P2)
+mediaTeste = CalculaMedia(T1, T2)
+print(f'A media dos testes é {mediaTeste:.1f} e das provas é {mediaProva:.1f}')
